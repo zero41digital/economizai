@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" data-menu-color="brand">
+
+<head>
+    <%- include ('partials/title-meta') %>
+    <!-- Plugins css -->
+    <link href="assets/libs/flatpickr/flatpickr.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/selectize/css/selectize.bootstrap3.css" rel="stylesheet" type="text/css" />
+    <%- include ('partials/head-css')%>
+</head>
+
+<body>
+    <div id="wrapper">
+        <%- include ('partials/sidenav') %>
+            <div class="content-page">
+                <%- include ('partials/topbar') %>
+                    <div class="content">
+                        <div class="container-fluid">
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="page-title-box">
+                                        <div class="page-title-right">
+                                            <form class="d-flex align-items-center mb-3">
+                                                <div class="input-group input-group-sm">
+                                                    <input type="text" class="form-control border" id="dash-daterange">
+                                                    <span class="input-group-text bg-blue border-blue text-white">
+                                                        <i class="mdi mdi-calendar-range"></i>
+                                                    </span>
+                                                </div>
+                                                <a href="javascript: void(0);" class="btn btn-blue btn-sm ms-2">
+                                                    <i class="mdi mdi-autorenew"></i>
+                                                </a>
+                                                <a href="javascript: void(0);" class="btn btn-blue btn-sm ms-1">
+                                                    <i class="mdi mdi-filter-variant"></i>
+                                                </a>
+                                            </form>
+                                        </div>
+                                        <h4 class="page-title">Dashboard</h4>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="row">
+                                <div class="col-md-6 col-xl-3">
+                                    <div class="widget-rounded-circle card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="avatar-lg rounded-circle bg-soft-primary border-primary border">
+                                                        <i class="fe-heart font-22 avatar-title text-primary"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="text-end">
+                                                        <h3 class="text-dark mt-1">R$<span data-plugin="counterup">58.947</span></h3>
+                                                        <p class="text-muted mb-1 text-truncate">Total vendido</p>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end row-->
+                                        </div>
+                                    </div> <!-- end widget-rounded-circle-->
+                                </div> <!-- end col-->
+    
+                                <div class="col-md-6 col-xl-3">
+                                    <div class="widget-rounded-circle card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="avatar-lg rounded-circle bg-soft-success border-success border">
+                                                        <i class="fe-shopping-cart font-22 avatar-title text-success"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="text-end">
+                                                        <h3 class="text-dark mt-1"><span data-plugin="counterup">127</span></h3>
+                                                        <p class="text-muted mb-1 text-truncate">Vendas hoje</p>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end row-->
+                                        </div>
+                                    </div> <!-- end widget-rounded-circle-->
+                                </div> <!-- end col-->
+    
+                                <div class="col-md-6 col-xl-3">
+                                    <div class="widget-rounded-circle card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="avatar-lg rounded-circle bg-soft-info border-info border">
+                                                        <i class="fe-bar-chart-line- font-22 avatar-title text-info"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="text-end">
+                                                        <h3 class="text-dark mt-1"><span data-plugin="counterup">0.58</span>%</h3>
+                                                        <p class="text-muted mb-1 text-truncate">Taxa de conversão</p>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end row-->
+                                        </div>
+                                    </div> <!-- end widget-rounded-circle-->
+                                </div> <!-- end col-->
+    
+                                <div class="col-md-6 col-xl-3">
+                                    <div class="widget-rounded-circle card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="avatar-lg rounded-circle bg-soft-warning border-warning border">
+                                                        <i class="fe-eye font-22 avatar-title text-warning"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="text-end">
+                                                        <h3 class="text-dark mt-1"><span data-plugin="counterup">78.41</span>k</h3>
+                                                        <p class="text-muted mb-1 text-truncate">Total de visitas hoje</p>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end row-->
+                                        </div>
+                                    </div> <!-- end widget-rounded-circle-->
+                                </div> <!-- end col-->
+                            </div>
+                            <!-- end row-->
+    
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="dropdown float-end">
+                                                <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="mdi mdi-dots-vertical"></i>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-end">
+                                                    <!-- item-->
+                                                    <a href="javascript:void(0);" class="dropdown-item">Sales Report    </a>
+                                                    <!-- item-->
+                                                    <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
+                                                    <!-- item-->
+                                                    <a href="javascript:void(0);" class="dropdown-item">Profit</a>
+                                                    <!-- item-->
+                                                    <a href="javascript:void(0);" class="dropdown-item">Action</a>
+                                                </div>
+                                            </div>
+    
+                                            <h4 class="header-title mb-0">Total Receita</h4>
+    
+                                            <div class="widget-chart text-center" dir="ltr">
+    
+                                                <div id="total-revenue" class="mt-0"  data-colors="#4fc6e1"></div>
+    
+                                                <h5 class="text-muted mt-0">Total de vendas realizadas hoje</h5>
+                                                <h2>$178</h2>
+    
+                                                
+                                                <div class="row mt-3">
+                                                    <div class="col-4">
+                                                        <p class="text-muted font-15 mb-1 text-truncate">Objetivo</p>
+                                                        <h4><i class="fe-arrow-down text-danger me-1"></i>R$7.8k</h4>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <p class="text-muted font-15 mb-1 text-truncate">Última semana</p>
+                                                        <h4><i class="fe-arrow-up text-success me-1"></i>$1.4k</h4>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <p class="text-muted font-15 mb-1 text-truncate">Último mês</p>
+                                                        <h4><i class="fe-arrow-down text-danger me-1"></i>$15k</h4>
+                                                    </div>
+                                                </div>
+    
+                                            </div>
+                                        </div>
+                                    </div> <!-- end card -->
+                                </div> <!-- end col-->
+    
+                                <div class="col-lg-8">
+                                    <div class="card">
+                                        <div class="card-body pb-2">
+                                            <div class="float-end d-none d-md-inline-block">
+                                                <div class="btn-group mb-2">
+                                                    <button type="button" class="btn btn-xs btn-light">Hoje</button>
+                                                    <button type="button" class="btn btn-xs btn-light">Semana</button>
+                                                    <button type="button" class="btn btn-xs btn-secondary">Mês</button>
+                                                </div>
+                                            </div>
+    
+                                            <h4 class="header-title mb-3">Análise afiliados</h4>
+    
+                                            <div dir="ltr">
+                                                <div id="sales-analytics" class="mt-4" data-colors="#7e57c2,#4fc6e1"></div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end card -->
+                                </div> <!-- end col-->
+                            </div>
+                            <!-- end row -->
+    
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="dropdown float-end">
+                                                <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="mdi mdi-dots-vertical"></i>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-end">
+                                                    <!-- item-->
+                                                    <a href="javascript:void(0);" class="dropdown-item">Edit Report</a>
+                                                    <!-- item-->
+                                                    <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
+                                                    <!-- item-->
+                                                    <a href="javascript:void(0);" class="dropdown-item">Action</a>
+                                                </div>
+                                            </div>
+    
+                                            <h4 class="header-title mb-3">Top 5 Afiliados</h4>
+    
+                                            <div class="table-responsive">
+                                                <table class="table table-borderless table-hover table-nowrap table-centered m-0">
+    
+                                                    <thead class="table-light">
+                                                        <tr>
+                                                            <th colspan="2">Afiliado</th>
+                                                            <th>Moeda</th>
+                                                            <th>Valores</th>
+                                                            <th>Total venda</th>
+                                                            <th>Total receita</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="width: 36px;">
+                                                                <img src="assets/images/users/user-2.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm" />
+                                                            </td>
+    
+                                                            <td>
+                                                                <h5 class="m-0 fw-normal">Eduardo</h5>
+                                                                <p class="mb-0 text-muted"><small>Membro desde 2024</small></p>
+                                                            </td>
+    
+                                                            <td>
+                                                                R$
+                                                            </td>
+    
+                                                            <td>
+                                                                11.093,45
+                                                            </td>
+    
+                                                            <td>
+                                                                11.093,45
+                                                            </td>
+    
+                                                            <td>
+
+                                                            </td>
+                                                        </tr>
+    
+                                                        <tr>
+                                                            <td style="width: 36px;">
+                                                                <img src="assets/images/users/user-3.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm" />
+                                                            </td>
+    
+                                                            <td>
+                                                                <h5 class="m-0 fw-normal">Yuri</h5>
+                                                                <p class="mb-0 text-muted"><small>Membro desde 2024</small></p>
+                                                            </td>
+    
+                                                            <td>
+                                                                R$
+                                                            </td>
+    
+                                                            <td>
+                                                                11.093,45
+                                                            </td>
+    
+                                                            <td>
+                                                                11.093,45
+                                                            </td>
+    
+                                                            <td>
+
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width: 36px;">
+                                                                <img src="assets/images/users/user-4.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm" />
+                                                            </td>
+    
+                                                            <td>
+                                                                <h5 class="m-0 fw-normal">Lucas</h5>
+                                                                <p class="mb-0 text-muted"><small>Membro desde 2024</small></p>
+                                                            </td>
+    
+                                                            <td>
+                                                                R$
+                                                            </td>
+    
+                                                            <td>
+                                                                11.093,45
+                                                            </td>
+    
+                                                            <td>
+                                                                11.093,45
+                                                            </td>
+    
+                                                            <td>
+
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width: 36px;">
+                                                                <img src="assets/images/users/user-5.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm" />
+                                                            </td>
+    
+                                                            <td>
+                                                                <h5 class="m-0 fw-normal">Pedro</h5>
+                                                                <p class="mb-0 text-muted"><small>Membro desde 2024</small></p>
+                                                            </td>
+    
+                                                            <td>
+                                                                R$
+                                                            </td>
+    
+                                                            <td>
+                                                                11.093,45
+                                                            </td>
+    
+                                                            <td>
+                                                                11.093,45
+                                                            </td>
+    
+                                                            <td>
+
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width: 36px;">
+                                                                <img src="assets/images/users/user-6.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm" />
+                                                            </td>
+    
+                                                            <td>
+                                                                <h5 class="m-0 fw-normal">Thiago</h5>
+                                                                <p class="mb-0 text-muted"><small>Membro desde 2024</small></p>
+                                                            </td>
+    
+                                                            <td>
+                                                                R$
+                                                            </td>
+    
+                                                            <td>
+                                                                11.093,45
+                                                            </td>
+    
+                                                            <td>
+                                                                11.093,45
+                                                            </td>
+    
+                                                            <td>
+
+                                                            </td>
+                                                        </tr>
+    
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end col -->
+    
+                                <div class="col-xl-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="dropdown float-end">
+                                                <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="mdi mdi-dots-vertical"></i>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-end">
+                                                    <!-- item-->
+                                                    <a href="javascript:void(0);" class="dropdown-item">Edit Report</a>
+                                                    <!-- item-->
+                                                    <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
+                                                    <!-- item-->
+                                                    <a href="javascript:void(0);" class="dropdown-item">Action</a>
+                                                </div>
+                                            </div>
+    
+                                            
+                            <!-- end row -->
+    
+                        </div> <!-- container -->
+                    </div>
+
+                    <%- include ('partials/footer') %>
+            </div>
+    </div>
+
+    <%- include ('partials/right-sidebar') %>
+    <%- include ('partials/footer-scripts') %>
+    <!-- Plugins js-->
+    <script src="assets/libs/flatpickr/flatpickr.min.js"></script>
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/libs/selectize/js/standalone/selectize.min.js"></script>
+
+    <!-- Dashboar 1 init js-->
+    <script src="assets/js/pages/dashboard-1.init.js"></script>
+
+</body>
+
+</html>

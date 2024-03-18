@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" data-layout="two-column" data-two-column-color="brand">
+  <head>
+    <%- include ('./title-meta') %>
+    <%- HeaderCss %>
+    <%- include ('./head-css')%>
+  </head>
+
+  <body>
+    <div id="wrapper">
+
+      <%- include ('./preloader') %>
+      <%- include ('./two-column-sidebar') %>
+
+      <div class="content-page">
+        <%- include ('./topbar') %>
+
+        <div class="content">
+          <div class="container-fluid">
+            <%- include ('./page-title') %>
+            <%- body %>
+          </div>
+        </div>
+
+        <%- include ('./footer') %>
+      </div>
+    </div>
+
+    <%- include ('./right-sidebar') %>
+    <%- include ('./footer-scripts') %> 
+    <%-FooterJs %>
+  </body>
+</html>

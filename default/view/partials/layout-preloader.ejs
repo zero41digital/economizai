@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" data-topbar-color="dark">
+  <head>
+    <%- include ('./title-meta') %>
+    <%- HeaderCss %>
+    <%- include ('./head-css')%>
+  </head>
+
+  <body>
+    <div id="wrapper">
+
+      <%- include ('./preloader') %>
+      <%- include ('./sidenav') %>
+
+      <div class="content-page">
+        <%- include ('./topbar') %>
+
+        <div class="content">
+          <div class="container-fluid">
+            <%- include ('./page-title') %>
+            <%- body %>
+          </div>
+        </div>
+
+        <%- include ('./footer') %>
+      </div>
+    </div>
+
+    <%- include ('./right-sidebar') %>
+    <%- include ('./footer-scripts') %> 
+    <%-FooterJs %>
+  </body>
+</html>
